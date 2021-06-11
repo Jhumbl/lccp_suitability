@@ -1,5 +1,5 @@
 ---
-title: "City Highways - Lamp Column Charger Suitability Analysis"
+title: "WCC City Highways - Lamp Column Charger Suitability Analysis"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -109,7 +109,7 @@ columns$labs <- sapply(seq(nrow(columns)), function(i) {
 lccp <- full_points %>% dplyr::filter(Provider=="Ubitricity")
 ```
 
-Full Overlay Map {data-icon="glyphicon-flash"}
+Map {data-icon="glyphicon-flash"}
 =====================================  
 
 ### Full Map {.no-padding .no-title}
