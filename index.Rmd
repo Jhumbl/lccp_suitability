@@ -137,7 +137,7 @@ columns %>%
     position="bottomleft",
     options = layersControlOptions(collapsed = FALSE, autoZIndex = TRUE)
   ) %>%
-  hideGroup(c("Residential Parking Bays", "Dedicated Bays")) %>%
+  hideGroup(c("Residential Parking Bays", "Dedicated Fast Chargers")) %>%
   addSearchOSM() 
 ```
 
