@@ -129,11 +129,11 @@ columns %>%
   addPolygons(data=res_bay, stroke = FALSE, fillColor = "#8B0000", fillOpacity = 1, group="Residential Parking Bays") %>%
   addCircles(lat = ~lat, lng = ~lon, radius = 3, stroke = FALSE, fillColor = ~colour, fillOpacity = 1, popup=~labs, group="Lamp Columns") %>%
   addCircles(data = lccp, radius = 10, stroke = FALSE, fillColor = "white", fillOpacity = 1, group="Lamp Column Chargers", popup=~labs)  %>%
-  addCircles(data=dedicated_locations, lat=~Latitude, lng=~Longtitude, radius = 15, stroke=FALSE, fillColor = "#fffdd0", fillOpacity = 1, group="Dedicated Bays", popup=~Charge_Point) %>%
-  addLegendCustom(colors = c("#6C3483", "#D4AC0D", "white", "#fffdd0"), labels = c("Non Convertible LC", "Potentially Convertible LC", "Existing LCCP", "Dedicated Bays"), sizes = c(15, 15, 20, 25)) %>%
-  addLegend(position="bottomright", labels = c("Suitable LC Locations: 2,621", "Unsuitable LC Locations: 9,667", "Existing LC Charge Points: 313"), values="d", colors = c("black","black","black")) %>%
+  addCircles(data=dedicated_locations, lat=~Latitude, lng=~Longtitude, radius = 15, stroke=FALSE, fillColor = "#fffdd0", fillOpacity = 1, group="Dedicated Fast Chargers", popup=~Charge_Point) %>%
+  addLegendCustom(colors = c("#6C3483", "#D4AC0D", "white", "#fffdd0"), labels = c("Non Convertible LC", "Potentially Convertible LC", "Existing LCCP", "Dedicated Fast Chargers"), sizes = c(15, 15, 20, 25)) %>%
+  addLegend(position="bottomright", labels = c("Suitable LC Locations: 2,621", "Unsuitable LC Locations: 9,667", "Existing LC Charge Points: 819"), values="d", colors = c("black","black","black")) %>%
   addLayersControl(
-    overlayGroups = c("Residential Parking Bays", "Dedicated Bays", "Lamp Columns", "Lamp Column Chargers"),
+    overlayGroups = c("Residential Parking Bays", "Dedicated Fast Chargers", "Lamp Columns", "Lamp Column Chargers"),
     position="bottomleft",
     options = layersControlOptions(collapsed = FALSE, autoZIndex = TRUE)
   ) %>%
