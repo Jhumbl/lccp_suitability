@@ -151,7 +151,7 @@ About {data-icon="fa-bars"}
 * Date Created: 06/05/2020
 * Date Updated: 11/05/2021
 * Email: jhumble@westminster.gov.uk
-* Data: 
+* Data: LCCP and Lamp Column data can be found [here](https://github.com/Jhumbl/lccp_suitability/tree/main/data).
 
 The map provided in conjunction with this report shows the result of a suitability analysis of all Westminster lamp columns and their ability to be converted into charging columns for electric vehicles.
 
